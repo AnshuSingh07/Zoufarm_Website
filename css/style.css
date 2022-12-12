@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    color: #7D7987;
+}
+
+html{
+  font-size:14px;
+  scroll-behavior: smooth !important;   
+}
+
+body{
+    width: 100%;
+    height:100% !important; 
+    overflow-x: hidden;
+}
+
+
+:root{
+    --heading-color:#112D58;
+    --font-color:rgba(0, 0, 0, 0.95);
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-green: #66BB6A;
+}
+
+.inner{
+  padding:4rem 0rem;
+}
+/* ------------------------------header starts here-------------------------- */
+.navigation-full-width{
+    position:fixed;
+    top:0;
+    z-index: 1;
+    width:100%;
+    background-color: #F9FAFD ;
+    opacity: 0.85;
+}
+
+
+#my-navigation{
+    background-color:transparent;
+    padding:1rem 0;
+    margin: 0;
+    border:0;
+}
+
+.navbar-brand{
+    width:140px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.navbar-brand span{
+    color: #0BAC56;
+    font-size:2rem;
+}
+
+.btn-md{
+    width:100px;
+    background-image:var(--bs-gradient);
+    background-color: #1F1534;
+    border-color: #1F1534;
+    border:1px solid transparent;
+    padding:0.7rem 1.4rem;
+    border-radius:0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right:0.3rem;
+}
+.btn-md:hover{
+  color: #fff;
+}
+.navbar-nav li a{
+    font-size: 1.2rem;
+    font-weight:500;
+    color:rgba(0, 0, 0, 0.95) !important;
+}
+
+.navbar-header .navbar-toggle .icon-bar{
+  background-color:#000;
+  
+}
+/* ------------------------------header ends here-------------------------- */
+
+
+
+/* ------------------------------home starts here-------------------------- */
+.home{
+    width:100%;
+    padding-top:11rem;
+}
+
+.home .row{
+    padding-left:1.5rem;
+}
+
+.home .bg-holder{
+    width:100%;
+    height:100%;
+    background-image: url(../image/illustrations/hero-header.png);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0rem;
+    z-index:-1;
+}
+
+.home .row h1{
+    font-size:3.3rem;
+    font-weight:600;
+    color:var(--heading-color);
+    line-height: 4.4rem;
+}
+
+.home .row p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top:2.2rem;
+    line-height: 2.2rem;
+}
+
+.home .invest{
+    width: 140px;
+    height:45px;
+    background-color: var(--bs-green);
+    border: 0;
+    border-radius: 0.5rem;
+    padding:0.8rem 1.5rem;
+    color:#fff;
+    font-size: 1.23rem;
+    font-weight:700;
+    margin-top:2rem;
+}
+/* ------------------------------home ends here---------------------------- */
+
+
+
+/* ------------------------------opportunities starts here-------------------------- */
+.opportunities{
+  padding-top:8rem;
+}
+
+.opportunities .heading{
+  padding:0 2rem;
+}
+
+.opportunities .heading h1{
+  text-align: center;
+  font-size:2.5rem;
+  font-weight:600;
+  color:var(--heading-color);
+}
+
+.opportunities .heading p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top:1.5rem;
+  line-height: 2.2rem;
+}
+
+.opportunities .center{
+  display:flex;
+  justify-content: center;
+}
+
+.opportunities .icon{
+  width:60px;
+}
+
+.opportunities .card-size{
+  margin: 3.5rem 1.3rem;
+  padding:4rem 2rem 1rem 2rem;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  border-radius:0.25rem;
+}
+
+.opportunities .card h3{
+  font-size:1.5rem;
+  font-weight: 700;
+  color:var(--heading-color);
+}
+
+.opportunities .card p{
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+
+
+.opportunities .card-size:hover{
+  background-color: rgb(102, 187, 106 ,0.25);
+   /*agar bg low opacity ka chahiye but uske ander ka content ya text achese visible chahiye uske liye 
+   opacity element me na leke background-color me lena padta hai*/
+  transform:scale(0.99);
+  transition:all 0.3s ease-out ;
+ }
+
+ .opportunities .bg-holder{
+    width:100%;
+    height:100%;
+    background-image: url(../image/illustrations/bg.png);
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    z-index:-1;
+    margin-top:-17rem;
+ }
+/* ------------------------------opportunities ends here--------------------------- */
+
+
+/* ------------------------------invest starts here--------------------------- */
+
+.invest .heading h1{
+  /* text-align: center; */
+  font-size:2.5rem;
+  font-weight:600;
+  color:var(--heading-color);
+}
+
+.invest .heading p{
+  /* text-align: center; */
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-top:1.5rem;
+  line-height: 2.2rem;
+}
+
+.bg-invest-1{
+  width:100%;
+  /* height:50vh; */
+  background-size: cover;
+  margin: 3rem  0rem;
+  background-image: linear-gradient(181deg, rgba(113, 110, 110, 0) 15%, rgba(30, 42, 70, 0.93) 72.07%) , url(../image/gallery/short-terms.png);
+  padding:3rem;
+  border-radius: 0.3rem;
+}
+ .bg-invest-2{
+  width:100%;
+  /* height:50vh; */
+  background-size: cover;
+  margin: 3rem  0rem;
+  background-image:linear-gradient(181deg, rgba(113, 110, 110, 0) 35%, rgba(30, 45, 70, 0.93) 94.07%) , url(../image/gallery/fully-funded.png) ;
+  padding:3rem;
+  border-radius: 0.3rem;
+} 
+
+.bg-invest-1 h3 , .bg-invest-2 h3{
+  font-size:1rem;
+  color: var(--bs-green);
+  font-weight: 700;
+  margin-top:-10px;
+}
+
+.bg-invest-1 hr , .bg-invest-2 hr{
+  width:15%;
+  height:0.12rem;
+  background-color: #FFFFFF;
+}
+
+.bg-invest-1 h1 , .bg-invest-2 h1 {
+  color:#F9FAFD;
+  font-size:2rem;
+}
+
+.bg-invest-1 p , .bg-invest-2 p{
+  color:#F9FAFD;
+}
+
+.browse-farm{
+  width:10rem;
+  height: 3rem;
+  font-weight:500;
+  color:var(--bs-green);
+  border-radius: 0.6rem;
+  border:0;
+  margin-top:1.2rem;
+}
+/* Qs-1))  jab img me sirf width :100% dene se wo height automatically le leta hai toh bg-img me width:100% dene k baad
+wo automatically kyu height nahi leta ??
+Qs-2))  bg-img me height 100% dene k baad bhi kaam nahi karta hai ??
+        
+  technically height 100% col-lg-4 k child div (bg-img k liye) me dene ka matlab uske parent ka height usme apply
+  hoga.. or dekha jaye toh col-lg-4 ka koi default height nahi hota.. toh agar col-lg-4 mein height set nahi
+  karenge toh  uske child div me height 100% dene se bg-img chote height ka dikhega */
+
+
+
+
+
+
+/* ------------------------------invest ends here---------------------------- */
+
+
+/* ------------------------------work starts here---------------------------- */
+
+.work{
+  width:100%;
+  background-image: url(../image/illustrations/how-it-works.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.work h1{
+   color:#fff;
+   font-size:2.5rem;
+   font-weight:700;
+   text-align: center;
+}
+
+.work p{
+   width:80%; 
+   color:#fff;
+   font-size:1.15rem;
+   font-weight:400;
+   text-align: center;
+   margin: 1.5rem auto;
+}
+.work .num-order{
+  margin-top: 4rem;
+}
+
+.work .line{
+   width:95%;
+   height:2px;
+   background-color: #fff;
+   margin: 0 auto;
+}
+
+.work .number-line{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+
+ .num-1 ,
+ .num-2 ,
+ .num-3 ,
+ .num-4 {
+  width:3rem;
+  height:3rem;
+  color:#fff;
+  font-size:1.15rem;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius:50%;
+  background-color: var(--bs-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:-1.5rem;
+  cursor: pointer;
+}
+
+.num-change{
+  color: var(--bs-green);
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.num-card{
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  /* space-between is not getting applied */
+  margin-top:3rem;
+  /* background-color: orange; */
+}
+
+.num-card h1{
+  width:35%;
+  text-align: left;
+  font-size:2rem;
+  line-height:3rem;
+  /* background-color: hotpink; */
+}
+
+.num-card p{
+  width:40%;
+  text-align: left;
+  /* background-color: hotpink; */
+  font-weight: 500;
+}
+
+.num-card-2 ,
+.num-card-3 ,
+.num-card-4 {
+  display: none;
+}
+
+/* ------------------------------work ends here----------------------------- */
+
+
+
+
+/* ------------------------------testimonial starts here---------------------*/
+
+.testimonial  .heading{
+  background-image: url(../image/illustrations/testimonial-bg.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.testimonial .heading h3{
+  font-size:2.4rem;
+  font-weight:700;
+  color:var(--heading-color);
+  line-height: 3rem;
+}
+
+
+.testimonial .center{
+  display:flex;
+  justify-content: center;
+  /* background-color: orange; */
+  padding: 0 2rem;
+}
+
+.testimonial .item{
+  padding:3rem 0rem;
+}
+.testimonial .slide-card{
+  width:100%;
+  padding:2rem;
+  background-color: #fff;
+  box-shadow:0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  margin-bottom: 2.5rem;
+}
+.testimonial .slide-card .card-upper{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial .slide-card .card-upper img{
+  width:20%;
+  height:20%;
+}
+
+.testimonial .slide-card .card-upper h3{
+  font-size:1.3rem;
+  color:var(--bs-green);
+}
+
+.testimonial .slide-card .card-upper h4{
+  font-size:1.1rem;
+  color:#000;
+  margin-bottom: 2rem;
+}
+
+.testimonial .slide-card .card-lower p{
+  font-size:1.2rem;
+  margin-bottom:2rem;
+
+}
+
+.testimonial .move-arrow{
+  position: relative;
+  left:80%;  
+  /* right 0rem kyu nahi le raha hai ?  */
+  opacity: 1;
+}
+
+.fa-arrow-circle-left , .fa-arrow-circle-right{
+  font-size:2.3rem;
+  color:var(--bs-green);
+}
+/* ------------------------------testimonial ends here-----------------------*/
+
+
+/* ------------------------------farm-invest starts here----------------------*/
+.farm-invest {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  text-align:center;
+  position:relative;
+  top:13rem;
+  padding:2rem;
+ 
+}
+.farm-invest h1{
+  font-size:2.8rem;
+  font-weight:700;
+  color:var(--heading-color);
+}
+
+.farm-invest h1 span{
+  color:var(--bs-green);
+}
+
+.farm-invest .invest{
+  width: 220px;
+  height:45px;
+  background-color: var(--bs-green);
+  border: 0;
+  border-radius: 0.5rem;
+  padding:0.8rem 1.5rem;
+  color:#fff;
+  font-size: 1.23rem;
+  font-weight:700;
+  margin-top:2rem;
+}
+/* ------------------------------farm-invest ends here-----------------------*/
+
+
+/* ------------------------------footer starts here-----------------------*/
+footer {
+  width:100%;
+  background-image: url(../image/illustrations/footer-bg.png);
+  background-size: cover;
+  background-position:center;
+  padding-top:13rem;
+}
+footer .extra-links h6{
+  color:var(--heading-color);
+  font-size:1rem;
+}
+footer .extra-links{
+  margin-bottom: 2.5rem;
+}
+footer .extra-links ul li{
+  list-style-type: none;
+  font-size:1.1rem;
+  padding-top:1.2rem;
+  cursor: pointer;
+}
+
+footer .blog{
+  width:100%;
+  background-color: var(--bs-green);
+  padding:2rem;
+  border-radius: 0.5rem;
+}
+
+footer .blog h3{
+  font-size:1.5rem;
+  color:#fff;
+}
+
+footer .blog p{
+  font-size:1.1rem;
+  color:#fff;
+  margin-top:1.2rem;
+}
+
+footer .blog button{
+  width:130px;
+  height:45px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.5rem;
+  padding:0.8rem 1.5rem;
+  font-size: 1.23rem;
+  font-weight:700;
+  margin-top:0.6rem;
+
+}
+
+
+footer .blog i{
+  color:var(--bs-green);
+}
+
+
+footer .zou-logo{
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .zou-logo span{
+    color: #0BAC56;
+    font-size:1.8rem;
+}
+footer .zou-logo a{
+  text-decoration: none;
+}
+footer .footer-para{
+  text-align: right;
+  font-size:1rem;
+}
+
+.fa-heart{
+  color:var(--bs-green);
+  font-size:1.2rem;
+}
+
+footer .footer-para a{
+  color: #7D7987;
+}
+
+footer hr{
+  width:85%;
+  height:0.6px;
+  margin: 0 auto;
+  /* color: red !important; */
+  background-color: #E1E0E4!important;
+  /*  */
+}
+/* ------------------------------footer ends here------------------------*/
+
+
+
+/* ------------------------------media query starts here-------------------------- */
+@media only screen and (max-width:1200px) {
+  .bg-invest-1{
+    padding: 3rem 2rem;
+  }
+}
+@media only screen and (min-width:1200px){
+  .opportunities .card-size{
+    width:22%;
+  }
+}
+
+@media only screen and  (min-width: 768px) and (max-width: 995px) { 
+
+  /* html{
+    font-size:12px;
+  } */
+
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+    .navbar-toggle {
+      display: block !important;
+      position: absolute !important;
+      right: 0px;
+    }
+
+    .navbar-header {
+      float: none;
+    }
+   
+    .navbar-right {
+      float: none !important;
+      margin-left: 1rem;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-collapse {
+        margin-top: 2rem;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+    .navbar-nav {
+      float: none !important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav > li {
+      float: none;
+    }
+    .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .collapse.in {
+      display: block !important;
+    }
+    .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+ }
+
+ @media  only screen and (max-width:767px) {
+
+    .navbar-collapse {
+        margin-top: 2rem;
+    }
+     
+    /* html{
+      font-size:12px;
+    }
+     */
+    .home .row h1{
+        font-size:2.5rem;
+        line-height: 3.5rem;
+
+    }
+
+    .home .row p{
+      font-size:1.5rem;
+    }
+
+   .home .bg-holder{
+      background-image:url(../image/illustrations/hero-bg.png);
+   }
+
+   
+  .opportunities .center{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .opportunities .card-size{
+    margin: 3.5rem auto;
+  }
+
+  .opportunities .card{
+    text-align: center;
+  }
+
+  .num-card h1{
+    width:100%;
+  }
+  .num-card p{
+    width:100%;
+  }
+
+  .num-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .num-card-2 ,
+  .num-card-3 ,
+  .num-card-4 {
+    display: none;
+}
+
+
+.testimonial .center{
+  display:flex;
+  flex-direction: column;
+ }
+
+
+ footer .bottom-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .footer-para{
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+footer .zou-logo{
+  margin: 0 auto;
+
+}
+
+.opportunities{
+  padding-top:4rem;
+}
+
+.farm-invest{
+  top:6rem;
+}
+
+}
+
+
+@media  only screen and (max-width:580px) {
+
+  html{
+    font-size: 13px;
+  }
+
+  footer .wrap-down{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+  }
+
+  footer .shift-right{
+    margin-left:8%;
+  }
+
+
+}
+
+/* ------------------------------media query ends here-------------------------- */
